@@ -1,0 +1,11 @@
+<div class="corpo">
+  <h1>{{headerText}}</h1>
+  <div class="buttons">
+    <button class="sim" (click)="startParty()">Sim</button>
+    <button class="nao" 
+    [style.top.px]="posY" 
+    [style.left.px]="posX" 
+    (mouseover)="moverBotao($event)"
+    (touchstart)="moverBotao($event)">Não</button>
+  </div>
+</div> 
